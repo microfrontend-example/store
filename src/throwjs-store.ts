@@ -1,4 +1,4 @@
-import { BehaviorSubject, Observable } from "rxjs";
+import { BehaviorSubject, Observable } from 'rxjs';
 
 export interface ITodo {
   id: number;
@@ -13,7 +13,7 @@ class StoreTodo {
 
   constructor() {
     this._id = 0;
-    this._key = "TODOS";
+    this._key = 'TODOS';
     this._storeTodo$ = new BehaviorSubject(this.getFromLocalStorage());
   }
 

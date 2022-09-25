@@ -9,9 +9,9 @@ System.register([], function (t, r) {
                 r.s = function (t) {
                   if ((t || (t = 1), !e.y.meta || !e.y.meta.url))
                     throw (
-                      (console.error("__system_context__", e.y),
+                      (console.error('__system_context__', e.y),
                       Error(
-                        "systemjs-webpack-interop was provided an unknown SystemJS context. Expected context.meta.url, but none was provided"
+                        'systemjs-webpack-interop was provided an unknown SystemJS context. Expected context.meta.url, but none was provided'
                       ))
                     );
                   e.p = n(e.y.meta.url, t);
@@ -19,28 +19,28 @@ System.register([], function (t, r) {
               },
               838: (t, r, e) => {
                 r.R = function (t, r) {
-                  var e = document.createElement("a");
+                  var e = document.createElement('a');
                   e.href = t;
                   for (
                     var n =
-                        "/" === e.pathname[0] ? e.pathname : "/" + e.pathname,
+                        '/' === e.pathname[0] ? e.pathname : '/' + e.pathname,
                       o = 0,
                       i = n.length;
                     o !== r && i >= 0;
 
                   )
-                    "/" === n[--i] && o++;
+                    '/' === n[--i] && o++;
                   if (o !== r)
                     throw Error(
-                      "systemjs-webpack-interop: rootDirectoryLevel (" +
+                      'systemjs-webpack-interop: rootDirectoryLevel (' +
                         r +
-                        ") is greater than the number of directories (" +
+                        ') is greater than the number of directories (' +
                         o +
-                        ") in the URL path " +
+                        ') in the URL path ' +
                         t
                     );
                   var s = n.slice(0, i + 1);
-                  return e.protocol + "//" + e.host + s;
+                  return e.protocol + '//' + e.host + s;
                 };
                 Number.isInteger;
               },
@@ -61,19 +61,19 @@ System.register([], function (t, r) {
             }),
             (n.o = (t, r) => Object.prototype.hasOwnProperty.call(t, r)),
             (n.r = (t) => {
-              "undefined" != typeof Symbol &&
+              'undefined' != typeof Symbol &&
                 Symbol.toStringTag &&
                 Object.defineProperty(t, Symbol.toStringTag, {
-                  value: "Module",
+                  value: 'Module',
                 }),
-                Object.defineProperty(t, "__esModule", { value: !0 });
+                Object.defineProperty(t, '__esModule', { value: !0 });
             }),
-            (n.p = "");
+            (n.p = '');
           var o = {};
           return (
             (0, n(587).s)(1),
             (() => {
-              "use strict";
+              'use strict';
               function t(t, r, e) {
                 return (
                   r in t
@@ -99,23 +99,23 @@ System.register([], function (t, r) {
                   })(t) ||
                   (function (t) {
                     if (
-                      ("undefined" != typeof Symbol &&
+                      ('undefined' != typeof Symbol &&
                         null != t[Symbol.iterator]) ||
-                      null != t["@@iterator"]
+                      null != t['@@iterator']
                     )
                       return Array.from(t);
                   })(t) ||
                   (function (t, e) {
                     if (t) {
-                      if ("string" == typeof t) return r(t, e);
+                      if ('string' == typeof t) return r(t, e);
                       var n = Object.prototype.toString.call(t).slice(8, -1);
                       return (
-                        "Object" === n &&
+                        'Object' === n &&
                           t.constructor &&
                           (n = t.constructor.name),
-                        "Map" === n || "Set" === n
+                        'Map' === n || 'Set' === n
                           ? Array.from(t)
-                          : "Arguments" === n ||
+                          : 'Arguments' === n ||
                             /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)
                           ? r(t, e)
                           : void 0
@@ -124,7 +124,7 @@ System.register([], function (t, r) {
                   })(t) ||
                   (function () {
                     throw new TypeError(
-                      "Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."
+                      'Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.'
                     );
                   })()
                 );
@@ -134,7 +134,7 @@ System.register([], function (t, r) {
                   var n = r[e];
                   (n.enumerable = n.enumerable || !1),
                     (n.configurable = !0),
-                    "value" in n && (n.writable = !0),
+                    'value' in n && (n.writable = !0),
                     Object.defineProperty(t, n.key, n);
                 }
               }
@@ -156,11 +156,11 @@ System.register([], function (t, r) {
                 );
               };
               function u(t, r) {
-                if ("function" != typeof r && null !== r)
+                if ('function' != typeof r && null !== r)
                   throw new TypeError(
-                    "Class extends value " +
+                    'Class extends value ' +
                       String(r) +
-                      " is not a constructor or null"
+                      ' is not a constructor or null'
                   );
                 function e() {
                   this.constructor = t;
@@ -172,11 +172,11 @@ System.register([], function (t, r) {
                       : ((e.prototype = r.prototype), new e()));
               }
               function c(t) {
-                var r = "function" == typeof Symbol && Symbol.iterator,
+                var r = 'function' == typeof Symbol && Symbol.iterator,
                   e = r && t[r],
                   n = 0;
                 if (e) return e.call(t);
-                if (t && "number" == typeof t.length)
+                if (t && 'number' == typeof t.length)
                   return {
                     next: function () {
                       return (
@@ -187,12 +187,12 @@ System.register([], function (t, r) {
                   };
                 throw new TypeError(
                   r
-                    ? "Object is not iterable."
-                    : "Symbol.iterator is not defined."
+                    ? 'Object is not iterable.'
+                    : 'Symbol.iterator is not defined.'
                 );
               }
               function a(t, r) {
-                var e = "function" == typeof Symbol && t[Symbol.iterator];
+                var e = 'function' == typeof Symbol && t[Symbol.iterator];
                 if (!e) return t;
                 var n,
                   o,
@@ -221,7 +221,7 @@ System.register([], function (t, r) {
                 return t.concat(n || Array.prototype.slice.call(r));
               }
               function f(t) {
-                return "function" == typeof t;
+                return 'function' == typeof t;
               }
               function p(t) {
                 var r = t(function (t) {
@@ -239,14 +239,14 @@ System.register([], function (t, r) {
                   t(this),
                     (this.message = r
                       ? r.length +
-                        " errors occurred during unsubscription:\n" +
+                        ' errors occurred during unsubscription:\n' +
                         r
                           .map(function (t, r) {
-                            return r + 1 + ") " + t.toString();
+                            return r + 1 + ') ' + t.toString();
                           })
-                          .join("\n  ")
-                      : ""),
-                    (this.name = "UnsubscriptionError"),
+                          .join('\n  ')
+                      : ''),
+                    (this.name = 'UnsubscriptionError'),
                     (this.errors = r);
                 };
               });
@@ -374,7 +374,7 @@ System.register([], function (t, r) {
                 return (
                   t instanceof y ||
                   (t &&
-                    "closed" in t &&
+                    'closed' in t &&
                     f(t.remove) &&
                     f(t.add) &&
                     f(t.unsubscribe))
@@ -406,7 +406,7 @@ System.register([], function (t, r) {
                   delegate: void 0,
                 };
               function j() {}
-              var T = P("C", void 0, void 0);
+              var T = P('C', void 0, void 0);
               function P(t, r, e) {
                 return { kind: t, value: r, error: e };
               }
@@ -442,7 +442,7 @@ System.register([], function (t, r) {
                       this.isStopped
                         ? D(
                             (function (t) {
-                              return P("N", t, void 0);
+                              return P('N', t, void 0);
                             })(t),
                             this
                           )
@@ -450,7 +450,7 @@ System.register([], function (t, r) {
                     }),
                     (r.prototype.error = function (t) {
                       this.isStopped
-                        ? D(P("E", void 0, t), this)
+                        ? D(P('E', void 0, t), this)
                         : ((this.isStopped = !0), this._error(t));
                     }),
                     (r.prototype.complete = function () {
@@ -579,8 +579,8 @@ System.register([], function (t, r) {
                   complete: j,
                 },
                 M =
-                  ("function" == typeof Symbol && Symbol.observable) ||
-                  "@@observable";
+                  ('function' == typeof Symbol && Symbol.observable) ||
+                  '@@observable';
               function N(t) {
                 return t;
               }
@@ -701,8 +701,8 @@ System.register([], function (t, r) {
               var V = p(function (t) {
                   return function () {
                     t(this),
-                      (this.name = "ObjectUnsubscribedError"),
-                      (this.message = "object unsubscribed");
+                      (this.name = 'ObjectUnsubscribedError'),
+                      (this.message = 'object unsubscribed');
                   };
                 }),
                 Y = (function (t) {
@@ -777,7 +777,7 @@ System.register([], function (t, r) {
                       (this.isStopped = this.closed = !0),
                         (this.observers = this.currentObservers = null);
                     }),
-                    Object.defineProperty(r.prototype, "observed", {
+                    Object.defineProperty(r.prototype, 'observed', {
                       get: function () {
                         var t;
                         return (
@@ -890,7 +890,7 @@ System.register([], function (t, r) {
                   }
                   return (
                     u(r, t),
-                    Object.defineProperty(r.prototype, "value", {
+                    Object.defineProperty(r.prototype, 'value', {
                       get: function () {
                         return this.getValue();
                       },
@@ -953,10 +953,10 @@ System.register([], function (t, r) {
                 function t() {
                   !(function (t, r) {
                     if (!(t instanceof r))
-                      throw new TypeError("Cannot call a class as a function");
+                      throw new TypeError('Cannot call a class as a function');
                   })(this, t),
                     (this._id = 0),
-                    (this._key = "TODOS"),
+                    (this._key = 'TODOS'),
                     (this._storeTodo$ = new B(this.getFromLocalStorage()));
                 }
                 var r, n;
@@ -964,19 +964,19 @@ System.register([], function (t, r) {
                   (r = t),
                   (n = [
                     {
-                      key: "storeTodo$",
+                      key: 'storeTodo$',
                       get: function () {
                         return this._storeTodo$.asObservable();
                       },
                     },
                     {
-                      key: "id",
+                      key: 'id',
                       get: function () {
                         return this._id;
                       },
                     },
                     {
-                      key: "addTodo",
+                      key: 'addTodo',
                       value: function (t) {
                         this._storeTodo$.next(
                           [].concat(e(this._storeTodo$.value), [t])
@@ -986,7 +986,7 @@ System.register([], function (t, r) {
                       },
                     },
                     {
-                      key: "changeCompleted",
+                      key: 'changeCompleted',
                       value: function (t) {
                         var r = this.todos().map(function (r) {
                           return r.id === t
@@ -997,7 +997,7 @@ System.register([], function (t, r) {
                       },
                     },
                     {
-                      key: "deleteTodo",
+                      key: 'deleteTodo',
                       value: function (t) {
                         var r = this.todos().filter(function (r) {
                           return r.id !== t;
@@ -1006,13 +1006,13 @@ System.register([], function (t, r) {
                       },
                     },
                     {
-                      key: "todos",
+                      key: 'todos',
                       value: function () {
                         return this._storeTodo$.getValue();
                       },
                     },
                     {
-                      key: "saveInLocalStorage",
+                      key: 'saveInLocalStorage',
                       value: function () {
                         localStorage.setItem(
                           this._key,
@@ -1021,7 +1021,7 @@ System.register([], function (t, r) {
                       },
                     },
                     {
-                      key: "getFromLocalStorage",
+                      key: 'getFromLocalStorage',
                       value: function () {
                         var t = localStorage.getItem(this._key);
                         if (t) {
@@ -1036,7 +1036,7 @@ System.register([], function (t, r) {
                       },
                     },
                   ]) && i(r.prototype, n),
-                  Object.defineProperty(r, "prototype", { writable: !1 }),
+                  Object.defineProperty(r, 'prototype', { writable: !1 }),
                   t
                 );
               })())();
